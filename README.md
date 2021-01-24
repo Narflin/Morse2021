@@ -14,7 +14,8 @@ avoir `Audiofile.h` et `main.cpp` dans le même répertoire et compiler `main.cp
 >### Du morse vers le français
 >- Entrer "`d`" comme décoder quand le programme le demande
 >- Entrer le chemin du fichier .wav
->- le programme utilise une librairie pour la lecture du fichier, elle vérifie que le Header est bien conforme au .wav, et que les donnés du header soient cohérentes avec les donnés du fichier, si ce n'est pas le cas une erreur est renvoyée (assez locace sur le type de problème du Header).
+>- le programme peut renvoyer une erreur selon comment le fichier .wav est encodé, cela marche avec les fichiers créés par le programme et les quelques fichiers d'autres membres du groupe C++ que j'ai pu tester.
+>- le programme s'ajuste automatiquement sur la fréquence du son et la vitesse d'émission du morse
 >- Si le fichier est correct, le programme renvoie le texte converti (avec un message particulier si des charractères sont non reconnus)
 
 ## Charactères supportés
